@@ -11,6 +11,10 @@ gem 'devise'
 gem 'figaro'
 gem 'sqlite3'
 gem 'sendgrid'
+gem 'bourbon'
+gem 'neat'
+gem 'bitters'
+gem 'refills'
 group :development do
   gem 'hub', :require=>nil
   gem 'rails_layout'
@@ -24,4 +28,7 @@ group :test do
   gem 'database_cleaner', '1.0.1'
   gem 'email_spec'
   gem 'launchy'
+end
+group :production do
+  gem 'pg'
 end
