@@ -14,7 +14,6 @@ gem 'sendgrid'
 gem 'bourbon'
 gem 'neat'
 gem 'bitters'
-gem 'refills'
 group :development do
   gem 'hub', :require=>nil
   gem 'rails_layout'
