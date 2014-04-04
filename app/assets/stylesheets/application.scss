@@ -1,54 +1,16 @@
 @import "normalize";
 @import "bourbon";
 @import "gridsettings";
+@import "bitters/bitters";
 @import "neat";
+@import "refills";
 @import "colors";
 @import "components";
 
 html, body { height: 100%; width: 100%; margin: 0; overflow-x: hidden; }
 body{
 	@include outer-container;
-	background-image: url(san_rafael.jpg);
-	background-size: cover;
-  background-attachment: fixed;
- 	color: #fff;
 
 }
-img{
-    max-width: 100%;
-}
 section{
-	img{margin: 0 auto; display:block;}
 }
-h1{
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
- 	font-size:2em;
- 	color: #fff;
-  @include media($largemobile) {
-    font-size:3em;
-  }
-  @include media($smalltablet) {
-    font-size:5em;
-  }
-  @include media($ipad) {
-    padding: 0.5em 0;
-    font-size:3em;
-  }
-  @include media($desktop) {
-    padding: 0.5em 0;
-    font-size:3em;
-  }
-}
-h2, h3{ 
-  font-size:1.2em;
-  @include media($ipad) {
-    font-size:1.4em;
-  }
-}
-p{
-	font-size:1em;
-}
-a{font-family: 'Open Sans', sans-serif;  text-decoration: none !important; color: $spacered; }
-li{list-style-type:none;}
-footer{@include span-columns(12); padding: 0.5em 0 0 0; font-size:0.7em;}
