@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @project.name %>
+</p>
+
+<p>
+  <strong>Tagline:</strong>
+  <%= @project.tagline %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @project.description %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @project.start_date %>
+</p>
+
+<p>
+  <strong>Launch date:</strong>
+  <%= @project.launch_date %>
+</p>
+
+<p>
+  <strong>Completion percentage:</strong>
+  <%= @project.completion_percentage %>
+</p>
+
+<p>
+  <strong>Technologies:</strong>
+  <%= @project.technologies %>
+</p>
+
+<p>
+  <strong>Collaborators:</strong>
+  <%= @project.collaborators %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @project.url %>
+</p>
+
+<%= link_to 'Edit', edit_project_path(@project) %> |
+<%= link_to 'Back', projects_path %>

@@ -11,7 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140404041704) do
+ActiveRecord::Schema.define(version: 20140404052536) do
+
+  create_table "projects", force: true do |t|
+    t.string   "name"
+    t.string   "tagline"
+    t.string   "description"
+    t.string   "start_date"
+    t.string   "launch_date"
+    t.string   "completion_percentage"
+    t.integer  "technologies_id"
+    t.integer  "collaborators_id"
+    t.string   "url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "projects", ["collaborators_id"], name: "index_projects_on_collaborators_id"
+  add_index "projects", ["technologies_id"], name: "index_projects_on_technologies_id"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
