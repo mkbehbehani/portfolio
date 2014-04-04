@@ -9,7 +9,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'devise'
 gem 'figaro'
-gem 'pg'
+gem 'sqlite3'
 gem 'sendgrid'
 group :development do
   gem 'hub', :require=>nil
