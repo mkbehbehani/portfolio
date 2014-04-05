@@ -4,42 +4,45 @@
 </header>
 <section>
 	Here's what I've been up to lately:
-	<div class="grid-items">
-	  <a href="javascript:void(0)" class="grid-item">
-	    <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_1.png" alt="">
-	    <h1>Grid Item</h1>
-	    <p>Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
-	  </a>
-	  <a href="javascript:void(0)" class="grid-item grid-item-big grid-item-image">
-	    <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_2.png" alt="">
-	    <h1>Grid Item With an Image</h1>
-	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, illum.</p>
-	  </a>
-	  <a href="javascript:void(0)" class="grid-item grid-item-big">
-	    <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_3.png" alt="">
-	    <h1>Another Wide Item</h1>
-	    <p>Lorem ipsum consectetur dolor sit amet, consectetur adipisicing elit. Rem, illum.</p>
-	  </a>
-	  <a href="javascript:void(0)" class="grid-item">
-	    <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_2.png" alt="">
-	    <h1>Last Grid Item</h1>
-	    <p>Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
-	  </a>
-	  <a href="javascript:void(0)" class="grid-item">
-	    <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_2.png" alt="">
-	    <h1>Last Grid Item</h1>
-	    <p>Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
-	  </a>
-	  <a href="javascript:void(0)" class="grid-item">
-	    <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_3.png" alt="">
-	    <h1>A Grid Item</h1>
-	    <p>Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
-	  </a>
-	  <a href="javascript:void(0)" class="grid-item">
-	    <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_1.png" alt="">
-	    <h1>Item</h1>
-	    <p>Lorem ipsum dolor sit amet, elit. Rem, illum.</p>
-	  </a>
+	<div class="project issflyby">
+		<h1>ISS Flyby</h1>
+	    <div class="swiper-container inner" id="interior-container">
+	      <div class="swiper-wrapper inner" id="interior-wrapper">
+	        <div class="swiper-slide swiper-slide-visible swiper-slide-active inner">
+	            <div class="glasscard inner">
+	                <%= image_tag("iss.jpg") %>
+	                <p>International Space Station flyby coming up <%= (Time.now+10.minutes).strftime(" at %I:%M %p CST!") %></p>
+	                <footer><span class="source inner">ISS Flyby</span><span class="time inner">3 mins ago</span></footer>
+	            </div>
+	        </div>
+
+	      </div>
+	    </div>
+
+		<div class="swiper-container">
+		  	<div class="swiper-wrapper">
+		    	<div class="swiper-slide swiper-slide-visible">
+		    		<div class="description"><p>Get notifications to your Google Glass™ as the ISS approaches.</p></div>
+				    <div class="glasscard">
+					    <%= image_tag("iss.jpg") %>
+					    <p>International Space Station flyby coming up <%= (Time.now+10.minutes).strftime(" at %I:%M %p CST!") %></p>
+					    <footer><span class="source">ISS Flyby</span><span class="time">3 mins ago</span></footer>
+				    </div>
+		    	</div>
+		   	</div>
+	   	</div>
 	</div>
 
+
+
 </section>
+<script>
+var mySwiper = new Swiper('.swiper-container',{
+  pagination: '.pagination',
+  paginationClickable: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  watchActiveIndex: true,
+  keyboardControl:true
+})
+</script>
