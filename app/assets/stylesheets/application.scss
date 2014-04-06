@@ -104,7 +104,8 @@ $largedesktop-cardscale:1;
     }
     @include media($desktop) {
       font-size:2em;
-      padding: 0.5em;
+      line-height: 1.25em;
+      padding: 1.5em 0.5em 0.5em 0.5em;
     }
   }
   footer{
