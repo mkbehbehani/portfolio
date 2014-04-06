@@ -304,3 +304,9 @@ $largedesktop-cardscale:1;
 .swiper-active-switch {
   background: #fff;
 }
+.personaloptics{
+  @include span-columns(12);
+  padding:2em;
+  header{@include span-columns(6 of 12);}
+  img{@include span-columns(3 of 12); @include shift(1);}
+}
