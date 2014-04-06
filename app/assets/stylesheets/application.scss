@@ -155,6 +155,11 @@ $largedesktop-cardscale:1;
   }
 
 }
+.swiper-wrapper{
+  @include media($desktop) {
+      max-height:465px;
+  }
+}
 .inner{
   @include media($largemobile) {
     display:none;
