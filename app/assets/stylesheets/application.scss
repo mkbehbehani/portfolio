@@ -31,6 +31,26 @@ $largedesktop-cardscale:1;
   background-size: cover;
   background-attachment: fixed;
   padding: 2em 0;
+  h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100; 
+    @include media($desktop) {
+      font-size: $base-font-size*4;
+      text-align: left;
+      padding: 0.5em 0.5em 0.25em 0.5em;
+    }
+    
+  }
+  h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100; 
+    padding: 0 1em;
+    @include media($desktop) {
+      font-size: $base-font-size*2;
+      text-align: left;
+    }
+    
+  }
 }
 .description{ 
   width:640px*$cardscale;
@@ -142,7 +162,7 @@ $largedesktop-cardscale:1;
   color: #fff;
   text-align: center;
   @include media($largemobile) {
-    height: 270px;
+    height: 450px;
   }
   @include media($smalltablet) {
     height:395px;
@@ -151,14 +171,18 @@ $largedesktop-cardscale:1;
     height:420px;
   }
   @include media($desktop) {
-    height:50%;
-    max-height: 600px;
+    height:725px;
+    max-height: 750px;
   }
 
 }
 .swiper-wrapper{
+  @include media($largemobile) {
+    height: 350px;
+  }
   @include media($desktop) {
-      max-height:465px;
+      max-height:405px;
+      padding: 2em 0 0 0;
   }
 }
 .inner{
